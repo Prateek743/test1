@@ -1,0 +1,48 @@
+<html>
+<body>
+
+<form name="myform" method="Get" action="form2.html" id="someform" onSubmit="vFunction();" >
+First Name :<br>
+<input type="text" id="1" name="fname" ><br>
+Last Name :<br>
+<input type="text" id="2" name="lname" ><br>
+Select any method :<br>
+<input type="radio" id="3" name="method" value="localstorage"> Local Storage 
+<input type="radio" id="4" name="method" value="cookies"> Cookies
+<input type="radio" id="5" name="method" value="queryparams"> Query Params
+
+<br>
+
+<input type="submit" value="Submit">
+
+<script>
+
+function vFunction()
+{
+
+var n = document.getElementById("1");
+
+var m = document.getElementById("2");
+
+var l = document.getElementById("4");
+
+
+
+localStorage.setItem("1", n.value);
+
+localStorage.setItem("2", m.value);
+
+localStorage.setItem("4", l.value);
+}
+
+
+</script>
+
+
+
+</form>
+</body>
+</html>
+
+
+
